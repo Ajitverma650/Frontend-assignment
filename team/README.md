@@ -23,7 +23,7 @@ Built with **React**, **Redux**, and **Tailwind CSS**, this application provides
 - **State Management**: Redux Toolkit  
 - **Styling**: Tailwind CSS, Radix UI  
 - **Build Tool**: Vite  
-- **Linting**: ESLint  
+ 
 
 ---
 
@@ -57,7 +57,7 @@ npm run dev
 The app will be available at: http://localhost:5173
 
 📂 Project Structure
-php
+
 Copy code
 ├── public/               # Static assets (images, icons, etc.)
 ├── src/
