@@ -52,8 +52,18 @@ const membersSlice = createSlice({
     setFilter: (state, action) => {
       state.filter = action.payload;
     },
+    updateMemberTaskCounts: (state, action) => {
+    const { memberId, tasks } = action.payload;
+    const member = state.members.find((m) => m.id === memberId);
+    if (member) {
+      const memberTasks = tasks.filter((task) => task.assignedTo === memberId);
+      member.activeTasks = memberTasks.filter((task) => !task.completed).length;
+      member.completedTasks = memberTasks.filter((task) => task.completed).length;
+    }
+  }
   },
 });
 
-export const { updateMemberStatus, setFilter } = membersSlice.actions;
+
+export const { updateMemberStatus, setFilter, updateMemberTaskCounts } = membersSlice.actions;
 export default membersSlice.reducer;

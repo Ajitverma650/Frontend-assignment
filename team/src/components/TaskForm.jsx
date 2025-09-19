@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addTask } from "../redux/slices/tasksSlice";
+import { updateMemberTaskCounts } from "../redux/slices/membersSlice"; // Import the new action
 import { Button, Input } from "./ui/ui-base";
 
 const TaskForm = () => {
   const dispatch = useDispatch();
   const members = useSelector((state) => state.members.members);
+  
+  // Get all tasks to pass to the reducer
+  const allTasks = useSelector((state) => state.tasks.tasks);
+  
   const [title, setTitle] = useState("");
   const [assignedTo, setAssignedTo] = useState("");
   const [dueDate, setDueDate] = useState("");
@@ -13,7 +18,13 @@ const TaskForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title && assignedTo && dueDate) {
+      // Dispatch action to add the new task
       dispatch(addTask({ title, assignedTo, dueDate }));
+      
+      // Dispatch action to update the member's task counts
+      dispatch(updateMemberTaskCounts({ memberId: assignedTo, tasks: allTasks }));
+      
+      // Reset form fields
       setTitle("");
       setAssignedTo("");
       setDueDate("");

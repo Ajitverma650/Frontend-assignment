@@ -1,6 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { createSelector } from '@reduxjs/toolkit';
 import { updateTaskProgress } from "../redux/slices/tasksSlice";
+import { updateMemberTaskCounts } from "../redux/slices/membersSlice";
 import {
   Card,
   CardContent,
@@ -10,16 +12,31 @@ import {
   Button,
 } from "./ui/ui-base";
 
+// Input selectors to get raw data from the state
+const selectTasks = (state) => state.tasks.tasks;
+const selectCurrentUserId = (state) => state.role.currentUserId;
+
+// Create a memoized selector that only recalculates when its inputs change
+const selectTasksForCurrentUser = createSelector(
+  [selectTasks, selectCurrentUserId],
+  (tasks, currentUserId) => tasks.filter((task) => task.assignedTo === currentUserId)
+);
+
 const TaskList = () => {
   const dispatch = useDispatch();
+  
+  // Use the new memoized selector
+  const tasks = useSelector(selectTasksForCurrentUser);
+  
   const { currentUserId } = useSelector((state) => state.role);
-  const tasks = useSelector((state) =>
-    state.tasks.tasks.filter((task) => task.assignedTo === currentUserId)
-  );
+  const allTasks = useSelector((state) => state.tasks.tasks);
 
   const handleProgressChange = (taskId, currentProgress, change) => {
     const newProgress = Math.min(100, Math.max(0, currentProgress + change));
     dispatch(updateTaskProgress({ taskId, progress: newProgress }));
+    
+    // Dispatch the action to update member task counts
+    dispatch(updateMemberTaskCounts({ memberId: currentUserId, tasks: allTasks }));
   };
 
   return (
