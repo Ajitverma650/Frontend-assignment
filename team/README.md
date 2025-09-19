@@ -1,5 +1,4 @@
-
-# Team Dashboard
+# 🧑‍💻 Team Dashboard
 
 A dynamic and responsive dashboard for teams to manage tasks, track member status, and monitor overall team productivity.  
 Built with **React**, **Redux**, and **Tailwind CSS**, this application provides a seamless and intuitive user experience for both team leads and members.
@@ -23,42 +22,39 @@ Built with **React**, **Redux**, and **Tailwind CSS**, this application provides
 - **State Management**: Redux Toolkit  
 - **Styling**: Tailwind CSS, Radix UI  
 - **Build Tool**: Vite  
- 
 
 ---
 
 ## 🚀 Getting Started
 
 ### ✅ Prerequisites
+
 - Node.js (**v14 or higher**)  
 - npm or yarn  
 
 ### 📦 Installation
 
 Clone the repository:
-```bash
-git clone https://github.com/your-username/your-repository-name.git
+
 Navigate to the project directory:
 
-bash
-Copy code
 cd your-repository-name
+
+
 Install the dependencies:
 
-bash
-Copy code
 npm install
+
 ▶️ Running the Application
+
 Start the development server:
 
-bash
-Copy code
 npm run dev
+
+
 The app will be available at: http://localhost:5173
 
 📂 Project Structure
-
-Copy code
 ├── public/               # Static assets (images, icons, etc.)
 ├── src/
 │   ├── components/       # Reusable UI components
@@ -67,8 +63,11 @@ Copy code
 │   ├── lib/              # Utility functions and libraries
 │   └── main.jsx          # Entry point
 └── package.json
+
 🔄 State Management
+
 The application uses Redux Toolkit for centralized state management.
+
 The state is organized into the following slices:
 
 membersSlice: Manages team members, their statuses, and filtering options.
@@ -78,25 +77,22 @@ tasksSlice: Handles tasks, their progress, and assignments.
 roleSlice: Manages the current user's role (Team Lead or Team Member) and enables view switching.
 
 📜 Available Scripts
+
 In the project directory, you can run:
 
 npm run dev → Runs the app in development mode.
 
 npm run build → Builds the app for production.
 
- 📸 Screenshots
+📸 Screenshots
+🌞 Light Mode
+<img src="https://github.com/user-attachments/assets/8c978060-fe85-436e-9916-63812b83be15" alt="Dashboard Light Mode" width="100%" />
+🌙 Dark Mode
+<img src="https://github.com/user-attachments/assets/26d2fb69-5c48-4c6c-b83c-af56d1bd9114" alt="Dashboard Dark Mode" width="100%" />
+👨‍💼 Lead View
+<img src="https://github.com/user-attachments/assets/7b31ee36-5208-4c6c-b60d-4ee976ca68d1" alt="Dashboard Lead Mode" width="100%" />
+👩‍💻 Member View
+<img src="https://github.com/user-attachments/assets/358a938f-aa84-4cd5-bf24-67bf93c974df" alt="Dashboard Member Mode" width="100%" />
 
-Dashboard (Light Mode)
-<img width="1877" height="1010" alt="dashboard-light" src="https://github.com/user-attachments/assets/8c978060-fe85-436e-9916-63812b83be15" />
-
-
-Dashboard (Dark Mode)
-<img width="1881" height="1013" alt="dashboard-dark" src="https://github.com/user-attachments/assets/26d2fb69-5c48-4c6c-b83c-af56d1bd9114" />
-
-
- Dashboard (Lead Mode)
-<img width="1847" height="1029" alt="dashboard-lead" src="https://github.com/user-attachments/assets/7b31ee36-5208-4c6c-b60d-4ee976ca68d1" />
-
-
- Dashboard (member Mode)
-<img width="1867" height="1020" alt="dashboard-member" src="https://github.com/user-attachments/assets/358a938f-aa84-4cd5-bf24-67bf93c974df" />
+```bash
+git clone https://github.com/your-username/your-repository-name.git
