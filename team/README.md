@@ -84,19 +84,19 @@ npm run dev → Runs the app in development mode.
 
 npm run build → Builds the app for production.
 
-## 📸 Screenshots
+ 📸 Screenshots
 
-### Dashboard (Light Mode)
+Dashboard (Light Mode)
 <img width="1877" height="1010" alt="dashboard-light" src="https://github.com/user-attachments/assets/8c978060-fe85-436e-9916-63812b83be15" />
 
 
-### Dashboard (Dark Mode)
+Dashboard (Dark Mode)
 <img width="1881" height="1013" alt="dashboard-dark" src="https://github.com/user-attachments/assets/26d2fb69-5c48-4c6c-b83c-af56d1bd9114" />
 
 
-### Dashboard (Lead Mode)
+ Dashboard (Lead Mode)
 <img width="1847" height="1029" alt="dashboard-lead" src="https://github.com/user-attachments/assets/7b31ee36-5208-4c6c-b60d-4ee976ca68d1" />
 
 
-### Dashboard (member Mode)
+ Dashboard (member Mode)
 <img width="1867" height="1020" alt="dashboard-member" src="https://github.com/user-attachments/assets/358a938f-aa84-4cd5-bf24-67bf93c974df" />
