@@ -85,13 +85,24 @@ npm run dev → Runs the app in development mode.
 npm run build → Builds the app for production.
 
 📸 Screenshots
+
 🌞 Light Mode
+
 <img src="https://github.com/user-attachments/assets/8c978060-fe85-436e-9916-63812b83be15" alt="Dashboard Light Mode" width="100%" />
+
+
 🌙 Dark Mode
+
 <img src="https://github.com/user-attachments/assets/26d2fb69-5c48-4c6c-b83c-af56d1bd9114" alt="Dashboard Dark Mode" width="100%" />
+
+
 👨‍💼 Lead View
+
 <img src="https://github.com/user-attachments/assets/7b31ee36-5208-4c6c-b60d-4ee976ca68d1" alt="Dashboard Lead Mode" width="100%" />
+
+
 👩‍💻 Member View
+
 <img src="https://github.com/user-attachments/assets/358a938f-aa84-4cd5-bf24-67bf93c974df" alt="Dashboard Member Mode" width="100%" />
 
 ```bash
