@@ -100,12 +100,14 @@ npm run build → Builds the app for production.
 
 👨‍💼 Lead View
 
-<img src="https://github.com/user-attachments/assets/7b31ee36-5208-4c6c-b60d-4ee976ca68d1" alt="Dashboard Lead Mode" width="100%" />
+<img width="1847" height="1029" alt="dashboard-lead" src="https://github.com/user-attachments/assets/61d0b543-738f-4399-adf4-f8ba214999dc" />
+
 
 
 👩‍💻 Member View
 
-<img src="https://github.com/user-attachments/assets/358a938f-aa84-4cd5-bf24-67bf93c974df" alt="Dashboard Member Mode" width="100%" />
+<img width="1847" height="1029" alt="dashboard-lead" src="https://github.com/user-attachments/assets/80352005-813c-4ca3-bc55-92c957f14e77" />
+
 
 ```bash
 git clone https://github.com/your-username/your-repository-name.git
