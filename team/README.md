@@ -52,7 +52,8 @@ Start the development server:
 npm run dev
 
 
-The app will be available at: frontend-assignment-rho-wheat.vercel.app
+The app will be available at:
+🔗 https://frontend-assignment-rho-wheat.vercel.app
 
 📂 Project Structure
 ├── public/               # Static assets (images, icons, etc.)
@@ -61,8 +62,9 @@ The app will be available at: frontend-assignment-rho-wheat.vercel.app
 │   ├── pages/            # Main page components (Dashboards, role views)
 │   ├── redux/            # Redux Toolkit slices & store
 │   ├── lib/              # Utility functions and libraries
-│   └── main.jsx          # Entry point
-└── package.json
+│   └── main.jsx          # App entry point
+├── package.json          # Project metadata and scripts
+
 
 🔄 State Management
 
